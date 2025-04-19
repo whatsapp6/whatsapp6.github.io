@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp - 隐私安全的即时通讯工具</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#25D366',
+                        secondary: '#128C7E'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '2px',
+                        DEFAULT: '4px',
+                        'md': '8px',
+                        'lg': '12px',
+                        'xl': '16px',
+                        '2xl': '20px',
+                        '3xl': '24px',
+                        'full': '9999px',
+                        'button': '4px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-[1024px]">
+    <header class="fixed top-0 left-0 right-0 bg-white z-50 border-b border-gray-100">
+        <div class="max-w-[1440px] mx-auto px-8 flex items-center justify-between h-16">
+            <div class="flex items-center space-x-12">
+                <a href="/" class="flex items-center space-x-2">
+                    <i class="fab fa-whatsapp text-primary text-3xl"></i>
+                    <span class="text-xl font-bold">WhatsApp</span>
+                </a>
+                <nav class="flex items-center space-x-8">
+                    <a href="#" class="text-gray-600 hover:text-primary">功能</a>
+                    <a href="#" class="text-gray-600 hover:text-primary">隐私</a>
+                    <a href="#" class="text-gray-600 hover:text-primary">帮助中心</a>
+                    <a href="#" class="text-gray-600 hover:text-primary">博客</a>
+                    <a href="#" class="text-gray-600 hover:text-primary">商家专区</a>
+                    <a href="#" class="text-gray-600 hover:text-primary">应用</a>
+                </nav>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="px-4 py-2 text-gray-600 hover:text-primary !rounded-button whitespace-nowrap">登录</button>
+                <button class="px-4 py-2 bg-primary text-white hover:bg-secondary transition-colors !rounded-button whitespace-nowrap">下载</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <section class="relative h-[600px] bg-gray-50 overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="https://ai-public.mastergo.com/ai/img_res/61f5dc24d2bd2a23b53ab0ca3e104d76.jpg" class="w-full h-full object-cover" alt="Hero Background">
+            </div>
+            <div class="relative max-w-[1440px] mx-auto px-8 h-full flex items-center">
+                <div class="max-w-[600px]">
+                    <h1 class="text-5xl font-bold mb-6">私密地收发消息</h1>
+                    <p class="text-xl text-gray-600 mb-8">简单、可靠且私密的免费消息和通话体验，在世界各地都可享受。</p>
+                    <div class="flex space-x-4">
+                        <button class="px-6 py-3 bg-primary text-white hover:bg-secondary transition-colors !rounded-button whitespace-nowrap">
+                            <i class="fas fa-download mr-2"></i>立即登录 WhatsApp
+                        </button>
+                        <button class="px-6 py-3 text-gray-600 hover:text-primary border border-gray-300 hover:border-primary transition-colors !rounded-button whitespace-nowrap">
+                            了解更多
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <h2 class="text-3xl font-bold text-center mb-16">为什么选择 WhatsApp</h2>
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="text-center p-8 rounded-lg bg-gray-50">
+                        <i class="fas fa-lock text-primary text-4xl mb-6"></i>
+                        <h3 class="text-xl font-bold mb-4">端到端加密</h3>
+                        <p class="text-gray-600">您的消息和通话都受到端到端加密的保护，确保只有您和通话对象可以看到、听到或阅读内容。</p>
+                    </div>
+                    <div class="text-center p-8 rounded-lg bg-gray-50">
+                        <i class="fas fa-globe text-primary text-4xl mb-6"></i>
+                        <h3 class="text-xl font-bold mb-4">随时随地连接</h3>
+                        <p class="text-gray-600">无论您身在何处，只要有网络连接，就能与世界各地的亲朋好友保持联系。</p>
+                    </div>
+                    <div class="text-center p-8 rounded-lg bg-gray-50">
+                        <i class="fas fa-users text-primary text-4xl mb-6"></i>
+                        <h3 class="text-xl font-bold mb-4">群组聊天</h3>
+                        <p class="text-gray-600">创建群组与家人、朋友或同事一起交流，支持多达 256 人的群组聊天。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <h2 class="text-3xl font-bold text-center mb-16">最新动态</h2>
+                <div class="grid grid-cols-3 gap-8">
+                    <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://ai-public.mastergo.com/ai/img_res/4abc863d3d700a5730c1285aa2e42433.jpg" class="w-full h-60 object-cover" alt="News Image">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">WhatsApp 商业版新功能上线</h3>
+                            <p class="text-gray-600 mb-4">全新的商业工具助力企业更好地服务客户，提升沟通效率。</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-gray-500">2024 年 1 月 15 日</span>
+                                <a href="#" class="text-primary hover:text-secondary">阅读更多</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://ai-public.mastergo.com/ai/img_res/9f99344bc636b400c4168fae6f862d85.jpg" class="w-full h-60 object-cover" alt="News Image">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">隐私保护再升级</h3>
+                            <p class="text-gray-600 mb-4">推出新的隐私设置选项，让用户更好地控制个人信息。</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-gray-500">2024 年 1 月 10 日</span>
+                                <a href="#" class="text-primary hover:text-secondary">阅读更多</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                        <img src="https://ai-public.mastergo.com/ai/img_res/da2232bbb57e0f25be2c196ff99bc99a.jpg" class="w-full h-60 object-cover" alt="News Image">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">支付功能全面升级</h3>
+                            <p class="text-gray-600 mb-4">现在可以直接在聊天中完成支付，让交易更加便捷安全。</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-sm text-gray-500">2024 年 1 月 5 日</span>
+                                <a href="#" class="text-primary hover:text-secondary">阅读更多</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-white">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <h2 class="text-3xl font-bold text-center mb-16">使用教程</h2>
+                <div class="grid grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-download text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">下载应用</h3>
+                        <p class="text-gray-600">从应用商店下载 WhatsApp</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-user-plus text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">注册账号</h3>
+                        <p class="text-gray-600">使用手机号码注册账号</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-address-book text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">添加联系人</h3>
+                        <p class="text-gray-600">导入或添加您的联系人</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-comments text-primary text-2xl"></i>
+                        </div>
+                        <h3 class="font-bold mb-2">开始聊天</h3>
+                        <p class="text-gray-600">享受安全的即时通讯</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 bg-gray-50">
+            <div class="max-w-[1440px] mx-auto px-8">
+                <div class="bg-white rounded-lg p-12 text-center">
+                    <h2 class="text-3xl font-bold mb-6">立即开始使用 WhatsApp</h2>
+                    <p class="text-xl text-gray-600 mb-8">加入超过 20 亿用户的全球通讯网络</p>
+                    <button class="px-8 py-4 bg-primary text-white text-lg hover:bg-secondary transition-colors !rounded-button whitespace-nowrap">
+                        <i class="fas fa-download mr-2"></i>立即登录 WhatsApp
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white border-t border-gray-100">
+        <div class="max-w-[1440px] mx-auto px-8 py-12">
+            <div class="grid grid-cols-4 gap-8 mb-12">
+                <div>
+                    <h4 class="font-bold mb-4">WhatsApp</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-primary">功能</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">下载</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">WhatsApp Web</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">商业应用</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">公司</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-primary">关于我们</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">职业机会</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">品牌中心</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">联系我们</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">下载</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Mac/PC</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">Android</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">iPhone</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">帮助</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-primary">帮助中心</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">隐私政策</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-primary">服务条款</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex justify-between items-center pt-8 border-t border-gray-100">
+                <p class="text-gray-600">© 2025 WhatsApp Inc.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-primary">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-primary">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-primary">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-primary">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+	<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2df34f15ee3f1163e8ce271e8d455d07";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</body>
+</html>
